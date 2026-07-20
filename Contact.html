@@ -1,44 +1,57 @@
 <!DOCTYPE html>
-<html>
+<html lang="en">
 <head>
-    <title>Contact Qoobeey Restaurant</title>
-    <link rel="stylesheet" href="Style.css">
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Contact Us</title>
+<link rel="stylesheet" href="cdddd.css">
 </head>
 <body>
-    <header>
-        <h1>Contact Us</h1>
-    </header>
+
+  <!-- Header / Navigation -->
+  <header class="navbar">
+    <div class="logo">
+      <span class="logo-icon">🌴</span>
+      <h1><span class="logo-dark">Dream</span> <span class="logo-accent">Tourism</span></h1>
+    </div>
     <nav>
-        <ul>
-            <li><a href="index.html">Home</a></li>
-            <li><a href="menu.html">Menu</a></li>
-            <li><a href="about.html">About Us</a></li>
-            <li><a href="gallery.html">Gallery</a></li>
-            <li><a href="contact.html">Contact</a></li>
-        </ul>
+      <ul class="nav-links">
+        <li><a href="Home.html">Home</a></li>
+        <li><a href="Destination.html">Destinations</a></li>
+        <li><a href="About.html">About</a></li>
+        <li><a href="Contact.html">Contact</a></li>
+      </ul>
     </nav>
-    <main>
-        <h2>Get in Touch</h2>
-        <p>You can visit us in <span>Mogadishu, Banaadir, Somalia</span> or contact us through the following:</p>
-        
-        <ul>
-            <li>Phone: +252 61 0000000</li>
-            <li>Email: info@qoobeey.com</li>
-            <li>Location: Mogadishu</li>
-        </ul>
+  </header>
+<div class="contact-card">
+    <h1>Contact Us</h1>
+    <p class="subtitle">Fill out the form below to book your dream trip.</p>
 
-        <h3>Opening Hours</h3>
-        <ul>
-            <li>Saturday - Thursday: 8:00 AM - 10:00 PM</li>
-            <li>Friday: 2:00 PM - 11:00 PM</li>
-        </ul>
+    <form>
+        <label for="fullname">Full Name</label>
+        <input type="text" id="fullname" name="fullname" placeholder="Enter your name">
 
-        <blockquote>
-            "We are always ready to serve you."
-        </blockquote>
-    </main>
-    <footer>
-        <p>&copy; 2026 Qoobeey Restaurant</p>
-    </footer>
+        <label for="email">Email Address</label>
+        <input type="email" id="email" name="email" placeholder="Enter your email">
+
+        <label for="phone">Phone Number</label>
+        <input type="tel" id="phone" name="phone" placeholder="Enter your phone number">
+
+        <label for="destination">Select Destination</label>
+        <select id="destination" name="destination">
+            
+            <option value="egypt">Egypt</option>
+            <option value="eyl">Eyl</option>
+            <option value="hawaii">Hawaii</option>
+            <option value="maldives">Maldives</option>
+        </select>
+
+        <label for="message">Your Message</label>
+        <textarea id="message" name="message" rows="5" placeholder="Write your message here..."></textarea>
+
+        <button type="submit">Submit</button>
+    </form>
+</div>
+
 </body>
 </html>
